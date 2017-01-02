@@ -24,10 +24,12 @@ The best way to get started with DOMDOMDOM is to download this library into your
 ## API
 
 [`$l`](#l)  
+
 [DOM Traversal](#dom-traversal)  
   * [`each`](#each)  
   * [`children`](#children)  
   * [`parent`](#parent)  
+
 [DOM Manipulation](#dom-manipulation)  
   * [`html`](#html)  
   * [`empty`](#empty)  
@@ -37,9 +39,11 @@ The best way to get started with DOMDOMDOM is to download this library into your
   * [`addClass`](#addclass)  
   * [`removeClass`](#removeclass)  
   * [`toggleClass`](#toggleclass)  
+
 [Event Listeners](#event-listeners)  
   * [`on`](#on)  
   * [`off`](#off)  
+
 [`$l.ajax`](#lajax)  
 
 ### `$l`
