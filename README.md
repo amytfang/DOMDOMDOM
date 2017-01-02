@@ -91,10 +91,10 @@ $l(() => {
 
 Iterates through the elements in a `DOMNodeCollection` and applies a callback function passed as an arguments
 
-  ```
-  const elements = $l("div");
-  elements.each(callbackFunction);
-  ```
+```
+const elements = $l("div");
+elements.each(callbackFunction);
+```
 
 #### `children`
 
@@ -142,6 +142,15 @@ Toggles a class, given as an argument, for each `DOMNodeCollection` element.
 
 ### Event Listeners
 
+```
+function handler () {
+  console.log("Someone clicked!"
+}
+
+domnodecollection.on("click", handler);
+domnodecollection.off("click");
+```
+
 #### `on`
 
 Adds event listener to each `DOMNodeCollection` element.  List of events are available [here](https://developer.mozilla.org/en-US/docs/Web/Events).
@@ -149,15 +158,6 @@ Adds event listener to each `DOMNodeCollection` element.  List of events are ava
 #### `off`
 
 Removes event listener from each `DOMNodeCollection` element.
-
-  ```
-  function handler () {
-    console.log("Someone clicked!"
-  }
-
-  domnodecollection.on("click", handler);
-  domnodecollection.off("click");
-  ```
 
 ### $l.ajax
 
