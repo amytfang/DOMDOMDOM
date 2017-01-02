@@ -164,22 +164,22 @@ Sends HTTP Request and returns a `Promise` object.  Accepts a `Hash` object as a
   * error: error callback
   * contentType (default: 'application/x-www-form-urlencoded; charset=UTF-8'): content type of HTTP Request
 
-  ```
-  $l.ajax({
-    url: "/widgets.json",
-    method: "POST",
-    data: {
-      widget: {
-        name: "The Best Widget",
-        maker: "The Widget King"
-      }
-    },
-    success(widgetData) {
-      console.log("Widget created!");
-      // `create` action should `render json: @widget`
-      // this gives the client access to the `id` attribute issued by
-      // the server.
-      console.log("issued id: " + widgetData.id);
+```
+$l.ajax({
+  url: "/widgets.json",
+  method: "POST",
+  data: {
+    widget: {
+      name: "The Best Widget",
+      maker: "The Widget King"
     }
-  });
-  ```
+  },
+  success(widgetData) {
+    console.log("Widget created!");
+    // `create` action should `render json: @widget`
+    // this gives the client access to the `id` attribute issued by
+    // the server.
+    console.log("issued id: " + widgetData.id);
+  }
+});
+```
