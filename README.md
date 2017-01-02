@@ -22,24 +22,42 @@ The best way to get started with DOMDOMDOM is to download this library into your
 
 ## API
 
-[`$l`](#`$l`)
-[DOM Traversal](#DOM-Traversal)
-  [`each`](#`each`)
-  [`children`](#`children`)
-  [`parent`](#`parent`)
-[DOM Manipulation](#DOM-Manipulation)
-  [`html`](#`html`)
-  [`empty`](#`empty`)
-  [`append`](#`append`)
-  [`remove`](#`remove`)
-  [`attr`](#`attr`)
-  [`addClass`](#`addClass`)
-  [`removeClass`](#`removeClass`)
-  [`toggleClass`](#`toggleClass`)
-[Event Listeners](#Event-Listeners)
-  [`on`](#`on`)
-  [`off`](#`off`)
-[`$l.ajax`](#`$l.ajax`)
+[`$l`](#l)
+
+[DOM Traversal](#dom-traversal)
+
+  [`each`](#each)
+
+  [`children`](#children)
+
+  [`parent`](#parent)
+
+[DOM Manipulation](#dom-manipulation)
+
+  [`html`](#html)
+
+  [`empty`](#empty)
+
+  [`append`](#append)
+
+  [`remove`](#remove)
+
+  [`attr`](#attr)
+
+  [`addClass`](#addclass)
+
+  [`removeClass`](#removeclass)
+
+  [`toggleClass`](#toggleclass)
+
+[Event Listeners](#event-listeners)
+
+  [`on`](#on)
+
+  [`off`](#off)
+
+[`$l.ajax`](#lajax)
+
 
 ### `$l`
 
@@ -141,14 +159,14 @@ Adds event listener to each `DOMNodeCollection` element.  List of events are ava
 
 Removes event listener from each `DOMNodeCollection` element.
 
-```
-function handler () {
-  console.log("Someone clicked!"
-}
+  ```
+  function handler () {
+    console.log("Someone clicked!"
+  }
 
-domnodecollection.on("click", handler);
-domnodecollection.off("click");
-```
+  domnodecollection.on("click", handler);
+  domnodecollection.off("click");
+  ```
 
 ### `$l.ajax`
 
@@ -159,22 +177,22 @@ Sends HTTP Request and returns a `Promise` object.  Accepts a `Hash` object as a
   * error: error callback
   * contentType (default: 'application/x-www-form-urlencoded; charset=UTF-8'): content type of HTTP Request
 
-```
-$l.ajax({
-  url: "/widgets.json",
-  method: "POST",
-  data: {
-    widget: {
-      name: "The Best Widget",
-      maker: "The Widget King"
+  ```
+  $l.ajax({
+    url: "/widgets.json",
+    method: "POST",
+    data: {
+      widget: {
+        name: "The Best Widget",
+        maker: "The Widget King"
+      }
+    },
+    success(widgetData) {
+      console.log("Widget created!");
+      // `create` action should `render json: @widget`
+      // this gives the client access to the `id` attribute issued by
+      // the server.
+      console.log("issued id: " + widgetData.id);
     }
-  },
-  success(widgetData) {
-    console.log("Widget created!");
-    // `create` action should `render json: @widget`
-    // this gives the client access to the `id` attribute issued by
-    // the server.
-    console.log("issued id: " + widgetData.id);
-  }
-});
-```
+  });
+  ```
