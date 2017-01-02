@@ -26,35 +26,35 @@ The best way to get started with DOMDOMDOM is to download this library into your
 
 [DOM Traversal](#dom-traversal)
 
-  [`each`](#each)
+  * [`each`](#each)
 
-  [`children`](#children)
+  * [`children`](#children)
 
-  [`parent`](#parent)
+  * [`parent`](#parent)
 
 [DOM Manipulation](#dom-manipulation)
 
-  [`html`](#html)
+  * [`html`](#html)
 
-  [`empty`](#empty)
+  * [`empty`](#empty)
 
-  [`append`](#append)
+  * [`append`](#append)
 
-  [`remove`](#remove)
+  * [`remove`](#remove)
 
-  [`attr`](#attr)
+  * [`attr`](#attr)
 
-  [`addClass`](#addclass)
+  * [`addClass`](#addclass)
 
-  [`removeClass`](#removeclass)
+  * [`removeClass`](#removeclass)
 
-  [`toggleClass`](#toggleclass)
+  * [`toggleClass`](#toggleclass)
 
 [Event Listeners](#event-listeners)
 
-  [`on`](#on)
+  * [`on`](#on)
 
-  [`off`](#off)
+  * [`off`](#off)
 
 [`$l.ajax`](#lajax)
 
