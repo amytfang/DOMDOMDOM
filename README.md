@@ -1,10 +1,11 @@
 # DOMDOMDOM
 
-DOMDOMDOM is a JavaScript DOM interaction library inspired by jQuery.  Using DOMDOMDOM `$l` global function, users can:
+DOMDOMDOM is a JavaScript DOM interaction library inspired by jQuery.  Using DOMDOMDOM, users can:
   * Traverse and manipulate DOM elements
   * Build DOM elements
   * Create `DOMNodeCollection` objects from `HTMLElement`s
   * Queue functions until DOM is fully loaded
+  * Simplify HTTP requests
 
 ## Getting Started
 
@@ -22,42 +23,24 @@ The best way to get started with DOMDOMDOM is to download this library into your
 
 ## API
 
-[`$l`](#l)
-
-[DOM Traversal](#dom-traversal)
-
-  * [`each`](#each)
-
-  * [`children`](#children)
-
-  * [`parent`](#parent)
-
-[DOM Manipulation](#dom-manipulation)
-
-  * [`html`](#html)
-
-  * [`empty`](#empty)
-
-  * [`append`](#append)
-
-  * [`remove`](#remove)
-
-  * [`attr`](#attr)
-
-  * [`addClass`](#addclass)
-
-  * [`removeClass`](#removeclass)
-
-  * [`toggleClass`](#toggleclass)
-
-[Event Listeners](#event-listeners)
-
-  * [`on`](#on)
-
-  * [`off`](#off)
-
-[`$l.ajax`](#lajax)
-
+[`$l`](#l)  
+[DOM Traversal](#dom-traversal)  
+  * [`each`](#each)  
+  * [`children`](#children)  
+  * [`parent`](#parent)  
+[DOM Manipulation](#dom-manipulation)  
+  * [`html`](#html)  
+  * [`empty`](#empty)  
+  * [`append`](#append)  
+  * [`remove`](#remove)  
+  * [`attr`](#attr)  
+  * [`addClass`](#addclass)  
+  * [`removeClass`](#removeclass)  
+  * [`toggleClass`](#toggleclass)  
+[Event Listeners](#event-listeners)  
+  * [`on`](#on)  
+  * [`off`](#off)  
+[`$l.ajax`](#lajax)  
 
 ### `$l`
 
