@@ -18,7 +18,6 @@ The best way to get started with DOMDOMDOM is to download this library into your
   <script type="text/javascript" src="../src/dom_dom_dom.js"></script>
   ...
 </head>
-
 ```
 
 ## API
@@ -62,15 +61,20 @@ The final use of `$l` is as tool to queue functions to run once the COM is fully
 // Wrapped in $l, this function will only run once the DOM is fully loaded
 $l(() => {
 
-  // The element variable is a DOMNodeCollection object, an array-like structure, with all the div elements, so DOMNodeCollection such as `each` may be used
+  // The element variable is a DOMNodeCollection object, an array-like
+  //structure, with all the div elements, so DOMNodeCollection such as `each`
+  //may be used
   const elements = $l("div");
 
   elements.each((element) => {
 
-    // This use of $l takes the string of HTML code, creates a HTMLElement, and wraps the HTMLElement in a DOMNodeCollection object
+    // This use of $l takes the string of HTML code, creates a HTMLElement,
+    // and wraps the HTMLElement in a DOMNodeCollection object
     const paragraph = $l("<p></p>");
 
-    // Because the elements contained by the DOMNodeCollection are still HTMLElements, they must be wrapped in an DOMNodeCollection before using DOMNodeCollection methods such as `append`
+    // Because the elements contained by the DOMNodeCollection are still
+    // HTMLElements, they must be wrapped in an DOMNodeCollection before using
+    // DOMNodeCollection methods such as `append`
     const $lelement = $l(element);
     $lelement.append(paragraph);
 
