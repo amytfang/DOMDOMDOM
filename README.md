@@ -46,7 +46,7 @@ The best way to get started with DOMDOMDOM is to download this library into your
 
 [`$l.ajax`](#lajax)  
 
-### `$l`
+### $l
 
 The DOMDOMDOM library utilizes the global variable of `$l` as a wrapper for all of the methods in the DOMDOMDOM library.  
 
@@ -155,7 +155,7 @@ Removes event listener from each `DOMNodeCollection` element.
   domnodecollection.off("click");
   ```
 
-### `$l.ajax`
+### $l.ajax
 
 Sends HTTP Request and returns a `Promise` object.  Accepts a `Hash` object as an argument with any of the following attributes:
   * method (default: "GET"): HTTP Request method or type
