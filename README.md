@@ -15,10 +15,14 @@ The best way to get started with DOMDOMDOM is to download this library into your
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="./css/reset.css">
-  <script type="text/javascript" src="../src/dom_dom_dom.js"></script>
+  <script type="text/javascript" src="../dist/dom_dom_dom.js"></script>
   ...
 </head>
 ```
+
+## Example
+
+For an example of a project using the DOMDOMDOM library, view the [Snake demo](snake_demo/snake.html).  
 
 ## API
 
