@@ -22,7 +22,7 @@ The best way to get started with DOMDOMDOM is to download this library into your
 
 ## Example
 
-For an example of a project using the DOMDOMDOM library, view the [Snake demo](snake_demo/snake.html).  
+For an example of a project using the DOMDOMDOM library, view the [Snake demo](snake_demo).  
 
 ## API
 
