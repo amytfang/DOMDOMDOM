@@ -1,6 +1,7 @@
 # DOMDOMDOM
 
 DOMDOMDOM is a JavaScript DOM interaction library inspired by jQuery.  Using DOMDOMDOM, users can:
+  * Select single or multiple DOM elements
   * Traverse and manipulate DOM elements
   * Build DOM elements
   * Create `DOMNodeCollection` objects from `HTMLElement`s
@@ -11,7 +12,7 @@ DOMDOMDOM is a JavaScript DOM interaction library inspired by jQuery.  Using DOM
 
 The best way to get started with DOMDOMDOM is to download this library into your project and include the DOMDOMDOM library in your source code.
 
-```
+```html
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="./css/reset.css">
@@ -19,10 +20,6 @@ The best way to get started with DOMDOMDOM is to download this library into your
   ...
 </head>
 ```
-
-## Example
-
-For an example of a project using the DOMDOMDOM library, view the [Snake demo](snake_demo).  
 
 ## API
 
@@ -61,7 +58,7 @@ The third use of `$l` takes in a string of HTML code, builds `HTMLElement`(s) fr
 
 The final use of `$l` is as tool to queue functions to run once the COM is fully loaded.
 
-```
+```javascript
 // Wrapped in $l, this function will only run once the DOM is fully loaded
 $l(() => {
 
@@ -95,7 +92,7 @@ $l(() => {
 
 Iterates through the elements in a `DOMNodeCollection` and applies a callback function passed as an arguments
 
-```
+```javascript
 const elements = $l("div");
 elements.each(callbackFunction);
 ```
@@ -146,11 +143,10 @@ Toggles a class, given as an argument, for each `DOMNodeCollection` element.
 
 ### Event Listeners
 
-```
+```javascript
 function handler () {
   console.log("Someone clicked!"
 }
-
 domnodecollection.on("click", handler);
 domnodecollection.off("click");
 ```
@@ -172,7 +168,7 @@ Sends HTTP Request and returns a `Promise` object.  Accepts a `Hash` object as a
   * error: error callback
   * contentType (default: 'application/x-www-form-urlencoded; charset=UTF-8'): content type of HTTP Request
 
-```
+```javascript
 $l.ajax({
   url: "/widgets.json",
   method: "POST",
@@ -191,3 +187,7 @@ $l.ajax({
   }
 });
 ```
+
+## Example
+
+For an example of a project using the DOMDOMDOM library, view the Snake Demo [code](snake_demo).  To run the demo, clone the DOMDOMDOM library and view the html file locally.
