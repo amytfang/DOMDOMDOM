@@ -190,4 +190,4 @@ $l.ajax({
 
 ## Example
 
-For an example of a project using the DOMDOMDOM library, view the Snake Demo [code](snake_demo).  To run the demo, clone the DOMDOMDOM library and view the html file locally.
+For an example of a project using the DOMDOMDOM library, view the Snake Demo [code](https://github.com/amytfang/DOMDOMDOM_demo).  To run the demo, clone the DOMDOMDOM library and view the html file locally.
