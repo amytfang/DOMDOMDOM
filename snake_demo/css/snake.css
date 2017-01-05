@@ -19,6 +19,10 @@ li {
   background-color: #fff;
 }
 
+h1 {
+  margin: 20px 0px;
+}
+
 .snake {
   background-color: green;
 }
