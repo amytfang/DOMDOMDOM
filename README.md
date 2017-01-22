@@ -10,7 +10,7 @@ DOMDOMDOM is a JavaScript DOM interaction library inspired by jQuery.  Using DOM
 
 ## Getting Started
 
-The best way to get started with DOMDOMDOM is to download this library into your project and include the DOMDOMDOM library in your source code.
+The quickest way to get started with DOMDOMDOM is to download this library into your project and include the webpack output `dom_dom_dom.js` in your source code.
 
 ```html
 <head>
@@ -20,6 +20,8 @@ The best way to get started with DOMDOMDOM is to download this library into your
   ...
 </head>
 ```
+
+Alternatively, user can use the documents in the `src` folder by running `webpack` in the command line to recreate the webpack file.
 
 ## API
 
@@ -90,7 +92,7 @@ $l(() => {
 
 #### `each`
 
-Iterates through the elements in a `DOMNodeCollection` and applies a callback function passed as an arguments
+Iterates through the elements in a `DOMNodeCollection` and applies a callback function passed as an argument
 
 ```javascript
 const elements = $l("div");
